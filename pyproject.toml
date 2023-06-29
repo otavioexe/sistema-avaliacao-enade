@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "sistema-avaliacao"
+version = "0.1.0"
+description = ""
+authors = ["otavio.exe <ootavio112@gmail.com>", "Camilo"]
+readme = "README.md"
+packages = [{include = "sistema_avaliacao"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+mysql-connector-python = "8.0.33"
+pymysql = "1.1.0"
+Flask = "2.3.2"
+Flask-Cors = "4.0.0"
+Flask-Testing = "0.8.1"
+Flask-RESTful = "0.3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
