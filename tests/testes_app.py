@@ -65,3 +65,12 @@ def test_delete_user():
 #test_get_user()
 #test_update_user()
 #test_delete_user()
+
+
+url = base_url + '/prova/1'
+response = requests.get(url)
+
+#url = base_url + '/prova'
+#dados = {'id': 1, 'data': '2023-06-30'}
+#response = requests.post(url, json=dados)
+print(response.json())

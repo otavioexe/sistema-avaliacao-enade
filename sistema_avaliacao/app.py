@@ -159,23 +159,23 @@ def excluir_questao(id_questao):
 @app.route('/provaquestao', methods=['POST'])
 def adicionar_questao_prova():
     dados_prova_questao = request.json
-    prova_questao_controller.adicionar_questao_prova(dados_prova_questao['id_prova'], dados_prova_questao['id_questao'])
+    prova_questao_controller.adicionar_questao_na_prova(dados_prova_questao['id_prova'], dados_prova_questao['id_questao'])
     return jsonify({'mensagem': 'Questão adicionada à prova com sucesso'}), 201
 
 @app.route('/provaquestao/<int:id_prova>/<int:id_questao>', methods=['DELETE'])
 def remover_questao_prova(id_prova, id_questao):
-    prova_questao_controller.remover_questao_prova(id_prova, id_questao)
+    prova_questao_controller.remover_questao_da_prova(id_prova, id_questao)
     return jsonify({'mensagem': 'Questão removida da prova com sucesso'}), 200
 
 @app.route('/provaquestao/<int:id_prova>/<int:id_questao>', methods=['PUT'])
 def atualizar_questao_prova(id_prova, id_questao):
     dados_prova_questao = request.json
-    prova_questao_controller.atualizar_questao_prova(id_prova, id_questao, dados_prova_questao['nova_questao'])
+    prova_questao_controller.atualizar_questao_na_prova(id_prova, id_questao, dados_prova_questao['nova_questao'])
     return jsonify({'mensagem': 'Questão atualizada na prova com sucesso'}), 200
 
 @app.route('/provaquestao/<int:id_prova>/<int:id_questao>', methods=['GET'])
 def recuperar_questao_prova(id_prova, id_questao):
-    questao_prova = prova_questao_controller.recuperar_questao_prova(id_prova, id_questao)
+    questao_prova = prova_questao_controller.recuperar_questoes_da_prova(id_prova)
     if questao_prova:
         return jsonify(questao_prova)
     return jsonify({'mensagem': 'Questão não encontrada na prova'}), 404
