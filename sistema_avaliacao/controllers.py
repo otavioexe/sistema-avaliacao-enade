@@ -118,8 +118,8 @@ class ResultadoController:
     def recuperar_resultado(self, id_resultado):
         return self.dao.recuperar_resultado(id_resultado)
 
-    def atualizar_resultado(self, id_resultado, novo_valor_obtido, novo_id_usuario, novo_id_prova):
-        self.dao.atualizar_resultado(id_resultado, novo_valor_obtido, novo_id_usuario, novo_id_prova)
+    def atualizar_resultado(self, id_resultado, novo_valor_obtido):
+        self.dao.atualizar_resultado(id_resultado, novo_valor_obtido)
 
     def excluir_resultado(self, id_resultado):
         self.dao.excluir_resultado(id_resultado)
