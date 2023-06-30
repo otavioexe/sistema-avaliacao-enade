@@ -2,7 +2,7 @@
 name = "sistema-avaliacao"
 version = "0.1.0"
 description = ""
-authors = ["otavio.exe <ootavio112@gmail.com>", "Camilo"]
+authors = ["Otavio <ootavio112@gmail.com>", "Camilo <camiloreis.jf@gmail.com"]
 readme = "README.md"
 packages = [{include = "sistema_avaliacao"}]
 
