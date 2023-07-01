@@ -35,6 +35,7 @@ python sistema_avaliacao/app.py
 ### Uso da aplicacao:
 - Com a aplicacao em execucao, agora é possivel executar comandos que consomem ela em varias linguagens ou ate mesmo no terminal. No exemplo abaixo iremos utilizar o Python e a biblioteca requests para fazer um comando de POST, GET, PUT e DELETE dentro da aplicacao que foi criada.
 - Crie um arquivo com a extencao `.py` para inserir os codigos:
+  - Defina na variavel `base_url` o link extraido do terminal que foi solicitado acima.
 ```python
 base_url = 'http://localhost:5000'
 ```
@@ -94,7 +95,7 @@ response = delete(f'usuario/{user_id}')
 print(response)
 ```
 
-Obs: os mesmos comandos podem ser redirecionados a outros objetos do banco de dados, basta indica-los depois do base_url (exemplo: `http://localhost:5000/tipoquestao`)
+Obs: os mesmos comandos podem ser redirecionados a outros objetos do banco de dados, basta indica-los depois do base_url (exemplo: `http://localhost:5000/tipoquestao`).
 
 ### Endpoints disponiveis na aplicacao:
 | Endpoint     |
