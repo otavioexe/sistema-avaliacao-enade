@@ -4,7 +4,7 @@
 
 ### Requisitos: 
 - Python >= 3.9
-- Poetry (Para instalar as dependencias do projeto; Se nao conseguir instalar ou configurar o Poetry, va no arquivo `pyproject.toml` e instale as dependencias do projeto manualmente atraves do comando pip install)
+- [Poetry](https://python-poetry.org/docs/#installation) (Para instalar as dependencias do projeto; Se nao conseguir instalar ou configurar o Poetry, va no arquivo `pyproject.toml` e instale as dependencias do projeto manualmente atraves do comando pip install)
 
 ### Instalando as dependencias:
 - Abra a pasta raiz onde esta todo o arquivo pyproject.toml e execute os seguintes comandos no terminal:
@@ -25,6 +25,13 @@ Obs: Caso nao consiga instalar o Poetry corretamente, va no arquivo `pyproject.t
 ### Requisitos: 
 - Python >= 3.9
 - Dependencias do projeto instaladas
+- MySQL 8
+
+### Definindo as credenciais do DataBase
+
+- Vá ate o arquivo `sistema_avaliacao/credenciais_db.py` e insira as credenciais do seu database.
+
+Obs: se quiser testar a conexao, va no arquivo `user_tests/teste_conexao.py`, insira as credenciais e teste.
 
 ### Inicializando aplicacao:
 - Na pasta raiz do projeto, execute o seguinte comando no terminal para iniciar a aplicacao:
