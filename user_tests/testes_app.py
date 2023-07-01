@@ -1,6 +1,6 @@
 import requests
 
-base_url = 'http://127.0.0.1:5000' 
+base_url = 'http://localhost:5000' 
 
 def get(endpoint):
     url = f'{base_url}/{endpoint}'
@@ -61,16 +61,8 @@ def test_delete_user():
     print(response)
 
 
-#test_create_user()
-#test_get_user()
-#test_update_user()
-#test_delete_user()
-
-
-url = base_url + '/prova/1'
-response = requests.get(url)
-
-#url = base_url + '/prova'
-#dados = {'id': 1, 'data': '2023-06-30'}
-#response = requests.post(url, json=dados)
-print(response.json())
+test_create_user()
+test_get_user()
+test_update_user()
+test_get_user()
+test_delete_user()
