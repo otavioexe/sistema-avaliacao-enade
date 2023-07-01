@@ -9,11 +9,11 @@
 ### Instalando as dependencias:
 - Abra a pasta raiz onde esta todo o arquivo pyproject.toml e execute os seguintes comandos no terminal:
 
-  - Para criar um ambiente virtual e instalar as dependencias nele:
+- Para criar um ambiente virtual e instalar as dependencias nele:
 ```bash
 poetry shell
 ```
-  - Para instalar todas as dependencias do projeto:
+- Para instalar todas as dependencias do projeto:
 ```bash
 poetry install
 ```
