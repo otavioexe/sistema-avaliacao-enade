@@ -34,13 +34,14 @@ Obs: Caso nao consiga instalar o Poetry corretamente, va no arquivo `pyproject.t
 Obs: se quiser testar a conexao, va no arquivo `user_tests/teste_conexao.py`, insira as credenciais e teste.
 
 ### Inicializando aplicacao:
+- Primeiramente certifique-se que o MySQL 8 esteja rodando e database tenha sido criado de acordo com o script SQL disponivel em `sql_criacao_banco/criacao_banco_enade.sql`.
 - Na pasta raiz do projeto, execute o seguinte comando no terminal para iniciar a aplicacao:
 ```bash
 python sistema_avaliacao/app.py
 ```
 - Armazene o link que esta aparecendo no terminal para colocarmos ele na variavel base_url. Ele vai se parecer com `http://127.0.0.1:5000` ou `http://localhost:5000`
 ### Uso da aplicacao:
-- Com a aplicacao em execucao, agora é possivel executar comandos que consomem ela em varias linguagens ou ate mesmo no terminal. No exemplo abaixo iremos utilizar o Python e a biblioteca requests para fazer um comando de POST, GET, PUT e DELETE dentro da aplicacao que foi criada.
+- Com a aplicacao em execucao, agora é possivel executar comandos que consomem ela em varias linguagens ou ate mesmo em bash no terminal. No exemplo abaixo iremos utilizar o Python e a biblioteca requests para fazer um comando de POST, GET, PUT e DELETE dentro da aplicacao que foi criada.
 - Crie um arquivo com a extencao `.py` para inserir os codigos:
   - Defina na variavel `base_url` o link extraido do terminal que foi solicitado acima.
 ```python
