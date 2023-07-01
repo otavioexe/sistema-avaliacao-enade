@@ -186,7 +186,7 @@ class TestResultadoAPI(unittest.TestCase):
 
     def test_excluir_resultado(self):
         url = self.base_url + '/resultado/1'
-        response = requests.delete(url)
+        response = requests.delete(url) 
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json(), {'mensagem': 'Resultado excluído com sucesso'})
 
